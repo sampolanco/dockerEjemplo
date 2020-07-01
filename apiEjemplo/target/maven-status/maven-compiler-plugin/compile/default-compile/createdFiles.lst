@@ -1,0 +1,13 @@
+mx\sam\javaApiServer\model\builder\UsuarioBuilder.class
+mx\sam\javaApiServer\configurations\ConfigProperties.class
+mx\sam\javaApiServer\service\utils\Crud.class
+mx\sam\javaApiServer\model\Rol.class
+mx\sam\javaApiServer\service\impl\UsuarioServiceImpl.class
+mx\sam\javaApiServer\configurations\SwaggerConfig.class
+mx\sam\javaApiServer\dto\UsuarioDTO.class
+mx\sam\javaApiServer\service\IUsuarioService.class
+mx\sam\javaApiServer\ApiEjemploApplication.class
+mx\sam\javaApiServer\controller\api\usuario\UsuarioController.class
+mx\sam\javaApiServer\repo\IUSuarioRepo.class
+mx\sam\javaApiServer\model\Usuario.class
+mx\sam\javaApiServer\dto\RolDTO.class

@@ -1,0 +1,31 @@
+version: '3'
+services:
+  servidorPostgres:
+    image: "postgres:12-alpine"
+    ports:
+      - "5432:5432"
+    restart: "always"
+    networks:
+      - red-proyecto
+    environment:
+      POSTGRES_PASSWORD: podocker
+  servidorJava:
+    image: "spring-java-api:0.1"
+    ports:
+      - "8080:8080"
+    restart: "always"
+    depends_on:
+      - servidorPostgres
+    networks:
+      - red-proyecto
+  clienteAngular:
+    image: "angular-client:0.1"
+    ports:
+      - "4200:80"
+    restart: "always"
+    depends_on:
+      - servidorJava
+    networks:
+      - red-proyecto
+networks:
+  red-proyecto:

@@ -1,6 +1,7 @@
 #--------------------------Spring
 HELP.md
-apiEjemplo/target/
+target/
+bin/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
